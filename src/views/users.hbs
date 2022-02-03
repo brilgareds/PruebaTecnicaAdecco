@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="card-header bg-primary text-white">
+        Listado de usuarios <i class="far fa-address-card"></i>
+    </div>
+    
+    <div class="card-body">
+        <ul class="list-group list-group-flush" id="userList">
+            {{#each users}}
+                <li class="list-group-item"><a href="user/{{this.username}}">{{this.name}} {{this.lastname}} ({{this.username}})</a></li>
+            {{/each}}
+        </ul>
+    </div>
+</div>

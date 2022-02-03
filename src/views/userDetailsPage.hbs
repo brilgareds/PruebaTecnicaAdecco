@@ -1,0 +1,26 @@
+<div class="card offset-1 offset-md-3 col-10 col-md-6">
+    <div class="card-header bg-info text-white">
+        Detalle de usuario
+    </div>
+    
+    <div class="card-body ps-5 pe-5 pt-4">
+        
+        <div style="display: inline-block;">
+            <span>Nombre</span><br>
+            <span>Apellido</span><br>
+            <span>Correo</span><br>
+            <span>Username</span>
+        </div>
+
+        <div class="ms-4" style="display: inline-block;">
+            <span class="mb-2">{{ user.name }}</span><br>
+            <span class="mb-2">{{ user.lastname }}</span><br>
+            <span class="mb-2">{{ user.email }}</span><br>
+            <span class="mb-2">{{ user.username }}</span><br>
+        </div>
+
+    </div>
+    <div>
+        <button class="offset-4 col-4 mt-3 mb-4 btn btn-danger" id="btnDeleteUser" username="{{user.username}}">Eliminar usuario</button>
+    </div>
+</div>
